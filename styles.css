@@ -1,0 +1,113 @@
+/* 
+    Estilos para el Encriptador de Texto
+    en este archivo CSS manejo los estilos y apariencia del proyecto.
+    - Diseño y colores de la pagina.
+    - Estilo a campos de texto y botones.
+    - Alineacion de los elementos .
+    - Efecto a los botones.
+*/
+
+
+body {  /*Estilo para etiqueta body*/
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, footer { /*Estilo para etiqueta header y footer*/
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main { /*Estilo para etiqueta main */
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: space-between; 
+}
+
+section { /*Estilo para etiqueta section*/
+    width: 45%;
+    box-sizing: border-box; 
+}
+
+textarea { /*Estilo para etiqueta textarea*/
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; 
+}
+
+
+.buttons { /*Estilo para clase buttons en etiqueta div*/
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+button { /*Estilo para etiqueta button*/
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#encryptBtn { /*Estilo para boton encriptar */
+    background-color: #343a40;
+    color: white;
+}
+
+#encryptBtn:hover { /*Estilo para boton encriptar al colocar mouse encima*/
+    background-color: #23272b;
+}
+
+#decryptBtn { /*Estilo para boton desencriptar*/
+    background-color: #d3d9df;
+    color: #343a40;
+}
+
+#decryptBtn:hover { /*Estilo para boton desencriptar al colocar mouse encima*/
+    background-color: #c4cdd5;
+}
+
+#copyBtn { /*Estilo para boton copiar */
+    background-color: #d3d9df;
+    color: #343a40;
+    margin-top: 10px;
+    padding: 10px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#copyBtn:hover { /*Estilo para boton copiar al colocar cursor encima*/
+    background-color: #c4cdd5;
+}
+
+#validationMsg { /*Estilo para mensaje de validacion*/
+    color: red;
+    text-align: center;
+}
+
+/* Media Query codigo responsivo para pantallas pequeñas*/
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Cambiar a disposición de columna para pantallas pequeñas */
+    }
+    
+    section {
+        width: 100%; /* Ajustar sección para ocupar todo el ancho */
+        margin-bottom: 20px; /* Espaciado entre secciones en pantallas pequeñas */
+    }
+}

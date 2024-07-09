@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+    Encriptador de Texto
+    En este archivo HTML defino la estructura básica del proyecto para encriptar y desencriptar texto.
+    - agregue un campo de texto para la entrada del usuario.
+    - coloque los botones para encriptar y desencriptar el texto ingresado.
+    - coloque un area de texto para mostrar el resultado.
+    - Un mensaje de validación para informar al usuario sobre las restricciones de entrada se muestra de forma dinamica.
+    - Un botón para copiar el texto encriptado desencriptado al portapapeles que muestra una alerta en javascript.
+    - Y al final de la pagina el año y mi nombre.
+-->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <main>
+        <section id="inputSection">
+            <textarea id="inputText" placeholder="Escribe aquí el texto a cifrar/descifrar..."></textarea>
+            <div class="buttons">
+                <button id="encryptBtn">Encriptar</button>
+                <button id="decryptBtn">Desencriptar</button>
+            </div>
+            <p id="validationMsg">No se aceptan mayúsculas ni caracteres especiales</p>
+        </section>
+        <section id="outputSection">
+            <textarea id="outputText" placeholder="El texto cifrado/descifrado aparecerá aquí..." readonly></textarea>
+            <button id="copyBtn">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Diego Esteban Duran Schichaschwili 2024</p>
+    </footer>
+    <script src="Encriptador.js"></script>
+</body>
+</html>
